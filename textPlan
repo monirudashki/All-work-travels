@@ -8,7 +8,7 @@ resp inline margin 10px
 - header section (possible optimization)
 
 - Everything local section
-  Size (witdh 100% 640px)
+  Size (width 100% 640px)
   -orange color FE8232
   -Everything Local - Right Here
   -text - From learning about volunteering in your community to information about local events, Local Consumer Reach is your guide to finding out what’s happening where you live and how you can help out. We are focused on effectiveness, transparency, and innovation. We connect you to learning content, resources, and tools to give in ways more likely to make a difference.
@@ -17,3 +17,9 @@ resp inline margin 10px
   size(header size)
   blue color - rgba(42, 138, 196, 1)
   article card (in optimization separate article in another component)
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+font-family: "Roboto Condensed";

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.navigationSection-container {
+  width: 100%;
+  height: 70vh;
+}
+.navigationSection-container nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.navigationSection-container nav a {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto Condensed";
+  color: rgb(28, 31, 34);
+  text-decoration: none;
+}
+.navigationSection-container nav .active {
+  background: #fe8232;
+  color: #ffffff;
+}
+.navigationSection-container .article {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  justify-content: space-between;
+  background: #fe8232;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.navigationSection-container .article .article__img {
+  width: 35%;
+  height: 70%;
+}
+.navigationSection-container .article .article__img img {
+  width: 100%;
+  height: 100%;
+}
+.navigationSection-container .article .article__desc {
+  width: 65%;
+  height: 40%;
+}
+.navigationSection-container .article .article__desc p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: left;
+  padding-right: 300px;
+}
+
+@media all and (max-width: 500px) {
+  .navigationSection-container {
+    display: none;
+  }
+}/*# sourceMappingURL=navigationSection.module.css.map */

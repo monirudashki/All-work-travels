@@ -9,6 +9,10 @@
   padding-left: 150px;
   padding-right: 150px;
 
+  .header-resp-desc {
+    display: none;
+  }
+
   .header {
     @include widthAndHeight(100%, 15%);
     @include flexContainer(0);
@@ -23,10 +27,6 @@
       background: $mainBlueColor;
       color: $mainWhiteColor;
       font-family: "Roboto Condensed";
-    }
-
-    .header-resp-desc {
-      display: none;
     }
 
     p {
@@ -111,6 +111,7 @@
     }
 
     .header-resp-desc {
+      display: block;
       font-size: 14px;
       font-family: "Poppins", sans-serif;
       margin-bottom: 10px;
@@ -123,7 +124,7 @@
     .cards-wrapper {
       width: 100%;
       // height: calc(85% - 40px);
-      @include flexContainer(10px);
+      @include flexContainer(34px);
       flex-direction: column;
 
       .card {
