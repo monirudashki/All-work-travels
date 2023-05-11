@@ -1,5 +1,19 @@
 inline-margin-150px
+resp inline margin 10px
 
-- get image from figma
+- get image from figma - done
 
 - structure core and content folders (sections) , probably i will need shared components
+
+- header section (possible optimization)
+
+- Everything local section
+  Size (witdh 100% 640px)
+  -orange color FE8232
+  -Everything Local - Right Here
+  -text - From learning about volunteering in your community to information about local events, Local Consumer Reach is your guide to finding out what’s happening where you live and how you can help out. We are focused on effectiveness, transparency, and innovation. We connect you to learning content, resources, and tools to give in ways more likely to make a difference.
+
+- Latest benefits
+  size(header size)
+  blue color - rgba(42, 138, 196, 1)
+  article card (in optimization separate article in another component)
