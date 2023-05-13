@@ -41,9 +41,7 @@ function Home() {
 
             <SubscribeSection modalToggle={modalToggle} />
 
-            {modalOn &&
-                <ModalSection modalToggle={modalToggle} />
-            }
+            <ModalSection modalToggle={modalToggle} modalOn={modalOn} />
 
             <GettingStartedSection />
 

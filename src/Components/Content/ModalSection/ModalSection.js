@@ -3,7 +3,8 @@ import React from 'react';
 import styles from './styles/modalSection.module.css';
 
 function ModalSection({
-    modalToggle
+    modalToggle,
+    modalOn
 }) {
 
     const onCloseModalHandle = () => {
@@ -11,7 +12,8 @@ function ModalSection({
     }
 
     return (
-        <section className={styles['modal-section']}>
+        <section className={`${styles['modal-section']} 
+        ${modalOn ? styles['slide-in'] : styles['slide-out']}`}>
             <div className={styles['modal']}>
                 <h2>Subscribe to our premium content</h2>
 
