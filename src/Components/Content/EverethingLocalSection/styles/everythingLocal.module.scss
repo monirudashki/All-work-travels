@@ -1,9 +1,6 @@
 @use "../../../../Styles/mixins" as *;
 @use "../../../../Styles/variables" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 .everythingLocal-container {
   @include widthAndHeight(100%, 70vh);
   @include flexContainer(0);

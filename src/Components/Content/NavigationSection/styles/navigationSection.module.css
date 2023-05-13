@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .navigationSection-container {
   width: 100%;
   height: 70vh;
@@ -24,6 +22,11 @@
   font-family: "Roboto Condensed";
   color: rgb(28, 31, 34);
   text-decoration: none;
+}
+.navigationSection-container nav a:hover {
+  background: #fd9753;
+  color: #ffffff;
+  transition: all 300ms ease-in-out;
 }
 .navigationSection-container nav .active {
   background: #fe8232;

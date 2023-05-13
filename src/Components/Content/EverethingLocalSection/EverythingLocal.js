@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './styles/everythingLocal.module.css';
 
 import curlyGirl from './images/curlGirlImage.png';
@@ -24,10 +24,9 @@ function EverythingLocal() {
                         </p>
                     </div>
                 </div>
-
             </article>
         </section>
     )
 }
 
-export default EverythingLocal
+export default memo(EverythingLocal);

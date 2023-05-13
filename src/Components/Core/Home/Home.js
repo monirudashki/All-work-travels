@@ -29,9 +29,7 @@ function Home() {
         <>
             <Header hamburgerNavToggle={hamburgerNavToggle} />
 
-            {hamburgerNavOn &&
-                <HamburgerNav hamburgerNavToggle={hamburgerNavToggle} />
-            }
+            <HamburgerNav hamburgerNavToggle={hamburgerNavToggle} hamburgerNavOn={hamburgerNavOn} />
 
             <EverythingLocal />
 

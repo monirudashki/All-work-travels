@@ -26,3 +26,11 @@ resp inline margin 10px
 
 font-family: "Roboto Condensed";
 font-family: "Poppins", sans-serif;
+
+optimization
+
+- hover buttons
+- separate some components
+- transition for ham menu and modal
+- import global fonts (variables for fonts)
+- memo for components

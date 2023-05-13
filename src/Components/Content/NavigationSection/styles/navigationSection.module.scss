@@ -1,9 +1,6 @@
 @use "../../../../Styles/mixins" as *;
 @use "../../../../Styles/variables/" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 .navigationSection-container {
   @include widthAndHeight(100%, 70vh);
 
@@ -19,6 +16,12 @@
       font-family: "Roboto Condensed";
       color: rgba(28, 31, 34, 1);
       text-decoration: none;
+
+      &:hover {
+        background: #fd9753;
+        color: $mainWhiteColor;
+        transition: all 300ms ease-in-out;
+      }
     }
 
     .active {

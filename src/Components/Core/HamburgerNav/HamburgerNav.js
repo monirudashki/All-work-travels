@@ -11,7 +11,8 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 const close = <FontAwesomeIcon icon={faXmark} />
 
 function HamburgerNav({
-    hamburgerNavToggle
+    hamburgerNavToggle,
+    hamburgerNavOn
 }) {
 
     const onClickCloseHandle = () => {
@@ -19,7 +20,8 @@ function HamburgerNav({
     }
 
     return (
-        <section className={styles['hamburgerNav-section']}>
+        <section className={`${styles['hamburgerNav-section']} 
+        ${hamburgerNavOn ? styles['slide-in'] : styles['slide-out']}`}>
             <nav className={styles['navbar']}>
                 <div>
                     <p>All Work Travel</p>

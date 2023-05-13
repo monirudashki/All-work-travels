@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from '../LatestBenefits/styles/latestBenefits.module.css';
 
 import img1 from './images/lastBenefitsImage1.png';
 import img2 from './images/lastBenefitsImage2.png';
 import img3 from './images/lastBenefitsImage3.png';
+import LatestBenefitsCard from '../../Shared/LatestBenefitsCard/LatestBenefitsCard';
+
+const cards = [
+    {
+        id: 1,
+        img: img1,
+    },
+    {
+        id: 2,
+        img: img2,
+    },
+    {
+        id: 3,
+        img: img3,
+    }
+]
 
 function LatestBenefits() {
     return (
@@ -17,45 +33,7 @@ function LatestBenefits() {
             <p className={styles['header-resp-desc']}>From: <span>Business</span></p>
 
             <div className={styles['cards-wrapper']}>
-                <article className={styles['card']}>
-                    <div className={styles['card__img-wrapper']}>
-                        <img src={img1} alt="first" />
-                    </div>
-
-                    <div className={styles['card__desc']}>
-                        <p>Category: name</p>
-                        <h4>The quick brown fox...</h4>
-
-                        <button type='button'>Read article</button>
-                    </div>
-                </article>
-
-                <article className={styles['card']}>
-                    <div className={styles['card__img-wrapper']}>
-                        <img src={img2} alt="first" />
-                    </div>
-
-                    <div className={styles['card__desc']}>
-                        <p>Category: name</p>
-                        <h4>The quick brown fox...</h4>
-
-                        <button type='button'>Read article</button>
-                    </div>
-
-                </article>
-
-                <article className={styles['card']}>
-                    <div className={styles['card__img-wrapper']}>
-                        <img src={img3} alt="first" />
-                    </div>
-
-                    <div className={styles['card__desc']}>
-                        <p>Category: name</p>
-                        <h4>The quick brown fox...</h4>
-
-                        <button type='button'>Read article</button>
-                    </div>
-                </article>
+                {cards.map(card => <LatestBenefitsCard key={card.id} img={card.img} />)}
             </div>
         </section>
     )

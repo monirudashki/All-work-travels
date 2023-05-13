@@ -9,6 +9,8 @@
   height: 100vh;
   background: gray;
   overflow: auto;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
 }
 
 .navbar {
@@ -93,6 +95,29 @@
   background: rgb(42, 138, 196);
 }
 
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @media all and (max-width: 500px) {
   .hamburgerNav-section {
     width: calc(100% + 10px);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './styles/header.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -56,4 +56,4 @@ function Header({
     )
 }
 
-export default Header
+export default memo(Header)

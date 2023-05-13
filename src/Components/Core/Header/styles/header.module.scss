@@ -1,6 +1,5 @@
 @use "../../../../Styles/mixins" as *;
 @use "../../../../Styles/variables" as *;
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
 .header {
   @include widthAndHeight(100%, 523px);
@@ -40,6 +39,10 @@
         box-shadow: none;
         border: none;
         cursor: pointer;
+
+        &:hover {
+          color: rgb(171, 166, 166);
+        }
       }
     }
   }
@@ -68,6 +71,14 @@
     right: 1%;
     top: 50%;
     transform: translate(-1%, -50%);
+  }
+
+  .arrow-left,
+  .arrow-right {
+    &:hover {
+      background: lightgray;
+      cursor: pointer;
+    }
   }
 
   .title-container {
@@ -172,7 +183,7 @@
           background: rgba(205, 205, 205, 1);
           box-shadow: none;
           border: none;
-          padding: 6px;
+          padding: 8px;
         }
 
         :first-child {

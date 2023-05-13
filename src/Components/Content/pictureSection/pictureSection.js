@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import styles from './styles/pictureSection.module.css';
 
@@ -10,4 +10,4 @@ function PictureSection() {
     )
 }
 
-export default PictureSection;
+export default memo(PictureSection);

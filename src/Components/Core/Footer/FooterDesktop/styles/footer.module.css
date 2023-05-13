@@ -69,6 +69,9 @@
   font-family: "Poppins", sans-serif;
   color: rgba(244, 247, 250, 0.8);
 }
+.footer-main .footer-main__content .navigation a:hover {
+  text-decoration: underline;
+}
 .footer-main .footer-main__wrights {
   width: 80%;
   height: 15%;
@@ -92,6 +95,10 @@
 }
 .footer-main .footer-main__wrights .icons a {
   color: #ffffff;
+}
+.footer-main .footer-main__wrights .icons a:hover {
+  color: lightgray;
+  transition: all 300ms ease-in-out;
 }
 
 .footer-end {
@@ -133,6 +140,9 @@
   border: none;
   cursor: pointer;
   margin-bottom: 4px;
+}
+.footer-end .footer-end__button button:hover {
+  background-color: rgb(109, 186, 234);
 }
 
 @media all and (max-width: 500px) {
