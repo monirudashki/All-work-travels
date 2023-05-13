@@ -1,0 +1,103 @@
+@use "../../../../Styles/mixins" as *;
+@use "../../../../Styles/variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+
+.hamburgerNav-section {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  @include widthAndHeight(100vw, 100vh);
+  background: gray;
+  overflow: auto;
+}
+
+.navbar {
+  @include widthAndHeight(100%, 10%);
+  @include flexContainer(0);
+  background: $navBarColor;
+  margin-bottom: 200px;
+
+  div {
+    @include flexContainer(0);
+    width: 100%;
+    margin-inline: 150px;
+    justify-content: space-between;
+
+    p {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 28px;
+      color: rgba(249, 249, 249, 1);
+    }
+
+    button {
+      background: transparent;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 1);
+      box-shadow: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.content {
+  @include widthAndHeight(40%, 50%);
+  @include flexContainer(100px);
+  flex-direction: column;
+  margin-inline: auto;
+
+  nav {
+    @include flexContainer(10px);
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+
+    h2 {
+      color: $mainWhiteColor;
+      font-size: 24px;
+    }
+
+    a {
+      color: rgba(249, 249, 249, 0.7);
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
+
+  div {
+    @include flexContainer(15px);
+    font-family: "Roboto Condensed";
+
+    button {
+      border: none;
+      padding: 8px 16px;
+      color: $mainWhiteColor;
+    }
+
+    :first-child {
+      background: $mainOrangeColor;
+    }
+
+    :last-child {
+      background: $mainBlueColor;
+    }
+  }
+}
+
+@media all and (max-width: $smallMedia) {
+  .hamburgerNav-section {
+    width: calc(100% + 10px);
+  }
+
+  .navbar {
+    div {
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+  }
+}

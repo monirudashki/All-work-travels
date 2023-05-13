@@ -9,21 +9,28 @@ const menu = <FontAwesomeIcon icon={faBars} />
 const errorLeft = <FontAwesomeIcon icon={faChevronLeft} />
 const errorRight = <FontAwesomeIcon icon={faChevronRight} />
 
-function Header() {
+function Header({
+    hamburgerNavToggle
+}) {
+
+    const onClickMenuHandle = () => {
+        hamburgerNavToggle(true);
+    }
+
     return (
         <header className={styles['header']}>
 
             <nav className={styles['responsive-navbar']}>
                 <div>
                     <p>All Work Travel</p>
-                    <button type='button'>{menu}</button>
+                    <button type='button' onClick={onClickMenuHandle}>{menu}</button>
                 </div>
             </nav>
 
             <nav className={styles['navbar']}>
                 <div>
                     <p>All Work Travel</p>
-                    <button type='button'>{menu}</button>
+                    <button type='button' onClick={onClickMenuHandle}>{menu}</button>
                 </div>
             </nav>
 

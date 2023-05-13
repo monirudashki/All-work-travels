@@ -18,6 +18,8 @@ resp inline margin 10px
   blue color - rgba(42, 138, 196, 1)
   article card (in optimization separate article in another component)
 
+- React Icons - for hexagon
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");

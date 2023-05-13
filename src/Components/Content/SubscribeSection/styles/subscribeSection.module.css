@@ -52,6 +52,9 @@
   color: #ffffff;
   background: rgb(42, 138, 196);
 }
+.subscribeSection-container .content .content__subscribe button:hover {
+  background: rgb(109, 186, 234);
+}
 
 @media all and (max-width: 500px) {
   .subscribeSection-container {

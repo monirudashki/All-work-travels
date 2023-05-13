@@ -45,6 +45,10 @@
         border: none;
         color: $mainWhiteColor;
         background: $mainBlueColor;
+
+        &:hover {
+          background: $hoverBlueColor;
+        }
       }
     }
   }
