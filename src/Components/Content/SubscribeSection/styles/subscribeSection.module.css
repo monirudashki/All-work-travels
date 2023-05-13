@@ -58,6 +58,7 @@
 @media all and (max-width: 500px) {
   .subscribeSection-container {
     height: 80%;
+    padding-bottom: 40px;
   }
   .subscribeSection-container .content {
     flex-direction: column;

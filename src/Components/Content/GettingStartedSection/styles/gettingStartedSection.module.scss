@@ -38,6 +38,7 @@
       gap: 25px;
       flex-direction: column;
       margin: 0;
+      padding-bottom: 40px;
 
       .article {
         @include widthAndHeight(100%, auto);
