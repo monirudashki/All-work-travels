@@ -14,12 +14,22 @@ import ModalSection from '../../Content/ModalSection/ModalSection';
 function Home() {
 
     const [hamburgerNavOn, setHamburgerNavOn] = useState(false);
+    const [hamNavIsClicked, setHamNavIsClicked] = useState(false);
 
     const hamburgerNavToggle = useCallback((boolean) => {
         setHamburgerNavOn(boolean);
     }, []);
 
+    const HamNavIsClickedHandle = useCallback(() => {
+        setHamNavIsClicked(true);
+    }, []);
+
     const [modalOn, setModalOn] = useState(false);
+    const [modalIsClicked, setModalIsClicked] = useState(false);
+
+    const modalIsClickedHandle = useCallback(() => {
+        setModalIsClicked(true);
+    }, []);
 
     const modalToggle = useCallback((boolean) => {
         setModalOn(boolean);
@@ -27,9 +37,16 @@ function Home() {
 
     return (
         <>
-            <Header hamburgerNavToggle={hamburgerNavToggle} />
+            <Header
+                HamNavIsClickedHandle={HamNavIsClickedHandle}
+                hamburgerNavToggle={hamburgerNavToggle}
+            />
 
-            <HamburgerNav hamburgerNavToggle={hamburgerNavToggle} hamburgerNavOn={hamburgerNavOn} />
+            <HamburgerNav
+                hamburgerNavToggle={hamburgerNavToggle}
+                hamburgerNavOn={hamburgerNavOn}
+                hamNavIsClicked={hamNavIsClicked}
+            />
 
             <EverythingLocal />
 
@@ -39,9 +56,16 @@ function Home() {
 
             <NavigationSection />
 
-            <SubscribeSection modalToggle={modalToggle} />
+            <SubscribeSection
+                modalToggle={modalToggle}
+                modalIsClickedHandle={modalIsClickedHandle}
+            />
 
-            <ModalSection modalToggle={modalToggle} modalOn={modalOn} />
+            <ModalSection
+                modalToggle={modalToggle}
+                modalOn={modalOn}
+                modalIsClicked={modalIsClicked}
+            />
 
             <GettingStartedSection />
 

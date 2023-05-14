@@ -5,10 +5,12 @@ import styles from './styles/subscribeSection.module.css';
 import subscribeImg from './images/smsSubscribe.png'
 
 function SubscribeSection({
-    modalToggle
+    modalToggle,
+    modalIsClickedHandle
 }) {
 
     const onClickPopUpHandle = () => {
+        modalIsClickedHandle();
         modalToggle(true);
     }
 

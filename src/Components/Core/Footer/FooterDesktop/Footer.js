@@ -27,11 +27,13 @@ function Footer() {
 
                         <div className={styles['navigation']}>
                             <h3>LEGAL</h3>
-                            <Link to={'/'}>About us</Link>
-                            <Link to={'/'}>Privacy Policy</Link>
-                            <Link to={'/'}>SMS Privacy Policy</Link>
-                            <Link to={'/'}>Terms and Conditions</Link>
-                            <Link to={'/'}>SMS Terms and Conditions</Link>
+                            <ul>
+                                <li><Link to={'/'}>About us</Link></li>
+                                <li><Link to={'/'}>Privacy Policy</Link></li>
+                                <li><Link to={'/'}>SMS Privacy Policy</Link></li>
+                                <li><Link to={'/'}>Terms and Conditions</Link></li>
+                                <li><Link to={'/'}>SMS Terms and Conditions</Link></li>
+                            </ul>
                         </div>
                     </div>
 

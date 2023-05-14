@@ -19,9 +19,11 @@ function NavigationSection() {
         <>
             <section className={styles['navigationSection-container']}>
                 <nav>
-                    <NavLink to={'/'} className={setActiveStyle}>Community</NavLink>
-                    <NavLink to={'/LocalEvents'} className={setActiveStyle}>Local Events</NavLink>
-                    <NavLink to={'/Support'} className={setActiveStyle}>Support</NavLink>
+                    <ul>
+                        <li><NavLink to={'/'} className={setActiveStyle}>Community</NavLink></li>
+                        <li><NavLink to={'/LocalEvents'} className={setActiveStyle}>Local Events</NavLink></li>
+                        <li><NavLink to={'/Support'} className={setActiveStyle}>Support</NavLink></li>
+                    </ul>
                 </nav>
 
                 <div className={styles['article']}>

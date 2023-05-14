@@ -10,10 +10,12 @@ const errorLeft = <FontAwesomeIcon icon={faChevronLeft} />
 const errorRight = <FontAwesomeIcon icon={faChevronRight} />
 
 function Header({
-    hamburgerNavToggle
+    hamburgerNavToggle,
+    HamNavIsClickedHandle
 }) {
 
     const onClickMenuHandle = () => {
+        HamNavIsClickedHandle();
         hamburgerNavToggle(true);
     }
 

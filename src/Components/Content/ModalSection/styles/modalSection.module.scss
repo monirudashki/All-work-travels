@@ -54,6 +54,40 @@
   }
 }
 
+.top {
+  @include widthAndHeight(100%, 30%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.bottom {
+  @include widthAndHeight(100%, 30%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.left {
+  @include widthAndHeight(35%, 40%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.right {
+  @include widthAndHeight(35%, 40%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
 .slide-in {
   animation: slide-in 0.5s forwards;
   -webkit-animation: slide-in 0.5s forwards;

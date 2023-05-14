@@ -47,30 +47,42 @@
 
 .content {
   @include widthAndHeight(40%, 50%);
-  @include flexContainer(100px);
+  @include flexContainer(20px);
   flex-direction: column;
   margin-inline: auto;
 
+  h2 {
+    color: $mainWhiteColor;
+    font-size: 24px;
+  }
   nav {
     @include flexContainer(10px);
     flex-direction: column;
     font-family: "Poppins", sans-serif;
 
-    h2 {
-      color: $mainWhiteColor;
-      font-size: 24px;
-    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding-bottom: 10px;
+        a {
+          color: rgba(249, 249, 249, 0.7);
+          text-decoration: none;
+          font-size: 20px;
 
-    a {
-      color: rgba(249, 249, 249, 0.7);
-      text-decoration: none;
-      font-size: 20px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 
   div {
     @include flexContainer(15px);
     font-family: "Roboto Condensed";
+    margin-top: 100px;
 
     button {
       border: none;

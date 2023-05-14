@@ -12,7 +12,8 @@ const close = <FontAwesomeIcon icon={faXmark} />
 
 function HamburgerNav({
     hamburgerNavToggle,
-    hamburgerNavOn
+    hamburgerNavOn,
+    hamNavIsClicked
 }) {
 
     const onClickCloseHandle = () => {
@@ -20,8 +21,11 @@ function HamburgerNav({
     }
 
     return (
-        <section className={`${styles['hamburgerNav-section']} 
-        ${hamburgerNavOn ? styles['slide-in'] : styles['slide-out']}`}>
+        <section className=
+            {`${styles['hamburgerNav-section']} 
+        ${(hamburgerNavOn && hamNavIsClicked) && styles['slide-in']}
+        ${(!hamburgerNavOn && hamNavIsClicked) && styles['slide-out']}
+        `}>
             <nav className={styles['navbar']}>
                 <div>
                     <p>All Work Travel</p>
@@ -30,11 +34,13 @@ function HamburgerNav({
             </nav>
 
             <div className={styles['content']}>
+                <h2>HOME</h2>
                 <nav>
-                    <h2>HOME</h2>
-                    <Link>Category</Link>
-                    <Link>Category</Link>
-                    <Link>Category</Link>
+                    <ul>
+                        <li><Link>Category</Link></li>
+                        <li><Link>Category</Link></li>
+                        <li><Link>Category</Link></li>
+                    </ul>
                 </nav>
 
                 <div>

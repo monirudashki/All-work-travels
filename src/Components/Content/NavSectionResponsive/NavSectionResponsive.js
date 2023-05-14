@@ -2,10 +2,7 @@ import React from 'react';
 
 import styles from './styles/navSectionResponsive.module.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import contentImg from './images/communityImg.jpg';
-
-const hyphen = <FontAwesomeIcon icon="fa-solid fa-dash" />
 
 function NavSectionResponsive() {
     return (

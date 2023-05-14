@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 .footer-section {
   width: 100%;
   height: 70vh;
@@ -26,7 +24,7 @@
   align-items: center;
   gap: 220px;
   padding: 150px;
-  align-items: start;
+  align-items: flex-start;
 }
 .footer-main .footer-main__content h2 {
   margin-top: 20px;
@@ -39,7 +37,7 @@
   padding: 0;
   color: #ffffff;
   background: black;
-  border: 2px solid black;
+  border: 4px solid black;
 }
 .footer-main .footer-main__content .address {
   text-align: left;
@@ -56,20 +54,28 @@
   align-items: center;
   gap: 4px;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 .footer-main .footer-main__content .navigation h3 {
   font-family: "Roboto Condensed";
   margin-bottom: 12px;
 }
-.footer-main .footer-main__content .navigation a {
-  color: rgb(244, 247, 250);
+.footer-main .footer-main__content .navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-main .footer-main__content .navigation ul li {
   text-align: left;
+  padding-bottom: 10px;
+}
+.footer-main .footer-main__content .navigation ul li a {
+  color: rgb(244, 247, 250);
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  color: rgba(244, 247, 250, 0.8);
+  color: rgba(244, 247, 250, 0.5);
 }
-.footer-main .footer-main__content .navigation a:hover {
+.footer-main .footer-main__content .navigation ul li a:hover {
   text-decoration: underline;
 }
 .footer-main .footer-main__wrights {

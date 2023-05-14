@@ -5,28 +5,34 @@
   @include widthAndHeight(100%, 70vh);
 
   nav {
-    @include widthAndHeight(100%, 80px);
-    @include flexContainer(0);
-
-    a {
-      @include widthAndHeight(28%, 100%);
+    ul {
+      @include widthAndHeight(100%, 80px);
       @include flexContainer(0);
-      text-align: center;
-      font-size: 30px;
-      font-family: "Roboto Condensed";
-      color: rgba(28, 31, 34, 1);
-      text-decoration: none;
-
-      &:hover {
-        background: #fd9753;
-        color: $mainWhiteColor;
-        transition: all 300ms ease-in-out;
+      list-style: none;
+      margin: 0;
+      li {
+        @include widthAndHeight(28%, 100%);
+        @include flexContainer(0);
+        a {
+          @include widthAndHeight(100%, 100%);
+          @include flexContainer(0);
+          text-decoration: none;
+          text-align: center;
+          font-size: 30px;
+          font-weight: bold;
+          font-family: "Roboto Condensed";
+          color: rgba(28, 31, 34, 1);
+          &:hover {
+            background: #fd9753;
+            color: $mainWhiteColor;
+            transition: all 300ms ease-in-out;
+          }
+        }
+        .active {
+          background: $mainOrangeColor;
+          color: $mainWhiteColor;
+        }
       }
-    }
-
-    .active {
-      background: $mainOrangeColor;
-      color: $mainWhiteColor;
     }
   }
 
