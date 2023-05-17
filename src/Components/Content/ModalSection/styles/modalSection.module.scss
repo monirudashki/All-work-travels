@@ -15,7 +15,7 @@
 }
 
 .modal {
-  @include widthAndHeight(30%, 40%);
+  @include widthAndHeight(30%, 50%);
   @include flexContainer(30px);
   flex-direction: column;
   background: $mainOrangeColor;
@@ -55,7 +55,7 @@
 }
 
 .top {
-  @include widthAndHeight(100%, 30%);
+  @include widthAndHeight(100%, 25%);
   position: absolute;
   left: 0;
   top: 0;
@@ -63,7 +63,7 @@
 }
 
 .bottom {
-  @include widthAndHeight(100%, 30%);
+  @include widthAndHeight(100%, 25%);
   position: absolute;
   left: 0;
   bottom: 0;
